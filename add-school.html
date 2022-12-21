@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADMIN - Add School page</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <aside>
+    <ul>
+      <li>Iusto, consectetur?</li>
+      <li>Doloremque, voluptatibus.</li>
+      <li>Exercitationem, sequi.</li>
+      <li>Iusto, aspernatur?</li>
+      <li>Cumque, illum!</li>
+      <li>Corrupti, hic.</li>
+      <li>Tempora, quas!</li>
+      <li>Facilis, fugit!</li>
+      <li>Accusantium, architecto.</li>
+      <li>Fuga, veniam?</li>
+      <li>Tempore, amet.</li>
+      <li>Obcaecati, nulla.</li>
+      <li>Reprehenderit, qui.</li>
+      <li>Obcaecati, possimus?</li>
+      <li>Similique, reiciendis.</li>
+      <li>Consequuntur, exercitationem?</li>
+      <li>Quae, fugit.</li>
+      <li>Vero, blanditiis.</li>
+      <li>Ea, itaque.</li>
+      <li>Aliquid, aperiam?</li>
+      <li>Distinctio, pariatur.</li>
+    </ul>
+  </aside>
+
+  <main>
+    <form class="white-box" id="add-form">
+
+      <section data-info="school-general-info">
+
+        <h3>School General Info</h3>
+
+        <div class="row">
+
+          <div class="input-box col-md-3">
+            <input type="text" name="name" required onkeyup="this.setAttribute('value', this.value);" value=""
+              autocomplete="off" />
+            <label>School Name<span>*</span></label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+          <div class="input-box col-md-3">
+            <input type="text" name="school_id_alphanumeric" onkeyup="this.setAttribute('value', this.value);" value=""
+              autocomplete="off" />
+            <label>School ID</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+          <div class="input-box col-md-3">
+            <input type="text" name="natEmis" onkeyup="this.setAttribute('value', this.value);" value=""
+              autocomplete="off" />
+            <label>EMIS</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+          <div class="input-box col-md-3">
+            <input type="url" name="school_url" onkeyup="this.setAttribute('value', this.value);" value=""
+              autocomplete="off" />
+            <label>School Website</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+          <div class="input-box col-md-3">
+            <select name="circuit_id" id="" required>
+              <option value="" disabled selected>Choose...</option>
+              <option value="">Dzondo</option>
+              <option value="">Elim</option>
+              <option value="">Hlanganani Central</option>
+              <option value="">Hlanganani North</option>
+              <option value="">Hlanganani South</option>
+              <option value="">Lwamondo</option>
+              <option value="">Nzhelele Central</option>
+              <option value="">Nzhelele East</option>
+              <option value="">Nzhelele West</option>
+              <option value="">Sekgosese North</option>
+              <option value="">Soutpansberg East</option>
+              <option value="">Soutpansberg North</option>
+              <option value="">Soutpansberg West</option>
+              <option value="">Test Circuit</option>
+              <option value="">Vhuronga 2</option>
+            </select>
+            <label>Circuit<span>*</span></label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+          <div class="input-box col-md-3">
+            <select name="school_sector" id="">
+              <option value="" disabled selected>Choose...</option>
+              <option value="Public">Public</option>
+              <option value="Independent">Independent</option>
+            </select>
+            <label>Sector</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+          <div class="input-box col-md-3">
+            <select name="school_type" id="" required>
+              <option value="" disabled selected>Choose...</option>
+              <option value="Primary">Primary</option>
+              <option value="Secondary">Secondary</option>
+              <option value="Combined">Combined</option>
+            </select>
+            <label>Phase<span>*</span></label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+          <div class="input-box col-md-3">
+            <input type="text" name="quintile" onkeyup="this.setAttribute('value', this.value);" value=""
+              autocomplete="off" />
+            <label>Quintile</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+          <div class="input-box col-md-3">
+            <input type="text" name="telephone" onkeyup="this.setAttribute('value', this.value);" value=""
+              autocomplete="off" />
+            <label>Main School Phone No</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+          <div class="input-box col-md-3">
+            <input type="text" name="cellno" onkeyup="this.setAttribute('value', this.value);" value=""
+              autocomplete="off" />
+            <label>Second School Phone No</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+          <div class="input-box col-md-3">
+            <input type="text" name="email" onkeyup="this.setAttribute('value', this.value);" value=""
+              autocomplete="off" />
+            <label>School Email</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+        </div>
+
+      </section>
+
+      <section data-info="school-platform">
+
+        <h3>School Platform</h3>
+
+        <div class="row">
+
+          <div class="input-box col-md-6">
+            <textarea name="school_comments" onkeyup="this.setAttribute('value', this.value);" value=""></textarea>
+            <label>School Slogan</label>
+          </div>
+
+          <div class="input-box col-md-6">
+            <textarea name="school_comments" onkeyup="this.setAttribute('value', this.value);" value=""></textarea>
+            <label>School Mission</label>
+          </div>
+          <div class="input-box col-md-6">
+            <textarea name="school_comments" onkeyup="this.setAttribute('value', this.value);" value=""></textarea>
+            <label>School Vision</label>
+          </div>
+          <div class="input-box col-md-6">
+            <textarea name="school_comments" onkeyup="this.setAttribute('value', this.value);" value=""></textarea>
+            <label>School Values</label>
+          </div>
+
+          <div class="input-box col-md-3">
+            <input type="text" name="no_of_learners" onkeyup="this.setAttribute('value', this.value);" value=""
+              autocomplete="off" />
+            <label>EMIS Learner Count</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+          <div class="input-box col-md-3">
+            <input type="text" name="no_of_educators" onkeyup="this.setAttribute('value', this.value);" value=""
+              autocomplete="off" />
+            <label>EMIS Educators Count</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+          <!-- <div class="input-box col-md-2">
+            <input type="text" name="no_of_boys" onkeyup="this.setAttribute('value', this.value);" value=""
+              autocomplete="off" />
+            <label>No. of Boys</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+          <div class="input-box col-md-2">
+            <input type="text" name="no_of_girls" onkeyup="this.setAttribute('value', this.value);" value=""
+              autocomplete="off" />
+            <label>No. of Girls</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div> -->
+
+          <div class="input-box col-md-3">
+            <select name="grade_12_resources" id="">
+              <option value="" disabled selected>Choose...</option>
+              <option value="Done">Done</option>
+              <option value="NA">NA</option>
+              <option value="Pending">Pending</option>
+            </select>
+            <label>Grade 12 Resources</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+          <div class="input-box col-md-3">
+            <select name="digital_library" id="">
+              <option value="" disabled selected>Choose...</option>
+              <option value="Done">Done</option>
+              <option value="NA">NA</option>
+              <option value="Pending">Pending</option>
+            </select>
+            <label>Digital Library</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section data-info="school-status">
+        <h3>School Status</h3>
+
+        <div class="row">
+          <div class="input-box col-md-4">
+            <select name="status" id="">
+              <option value="" disabled selected>Choose...</option>
+              <option value="Make Appointment">Make Appointment</option>
+              <option value="Re-Engage">Re-Engage</option>
+              <option value="Pilot">Pilot</option>
+              <option value="Ready">Ready</option>
+              <option value="Awaiting Principal">Awaiting Principal</option>
+              <option value="Onboarding SGB">Onboarding SGB</option>
+              <option value="Onboarding Educators">Onboarding Educators</option>
+              <option value="Onboarding Parents">Onboarding Parents</option>
+              <option value="Refuse">Refuse</option>
+              <option value="Active">Active</option>
+            </select>
+            <label>Onboarding Status</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+          <div class="input-box col-md-4">
+            <select name="life_cycle" id="">
+              <option value="" disabled selected>Choose...</option>
+              <option value="Ongoing">Ongoing</option>
+              <option value="Awaiting">Awaiting</option>
+              <option value="Prepped">Prepped</option>
+            </select>
+            <label>Lifecycle</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+          <div class="input-box col-md-4">
+            <select name="lead" id="">
+              <option value="" disabled selected>Choose...</option>
+              <option value="Awaiting Feedback">Awaiting Feedback</option>
+              <option value="New">New</option>
+              <option value="Referral">Referral</option>
+              <option value="Upcoming">Upcoming</option>
+              <option value="Converted">Converted</option>
+            </select>
+            <label>Lead</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+          <div class="input-box col-md-6">
+            <textarea name="school_comments" onkeyup="this.setAttribute('value', this.value);" value=""></textarea>
+            <label>Current Status</label>
+          </div>
+
+          <!-- <div class="input-box col-md-6">
+            <textarea name="onboarding_status" onkeyup="this.setAttribute('value', this.value);" value=""></textarea>
+            <label>Onboarding Status</label>
+          </div> -->
+
+          <div class="input-box col-md-6">
+            <textarea name="school_comments" onkeyup="this.setAttribute('value', this.value);" value=""></textarea>
+            <label>Next Step</label>
+          </div>
+        </div>
+      </section>
+
+      <section data-info="school-address">
+        <div class="row">
+          <h3>School Address</h3>
+
+          <div class="input-box col-md-6">
+            <input type="text" name="streetAddress" onkeyup="this.setAttribute('value', this.value);" value=""
+              autocomplete="off" />
+            <label>Street Address</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+          <div class="input-box col-md-6">
+            <input type="text" name="postalAddress" onkeyup="this.setAttribute('value', this.value);" value=""
+              autocomplete="off" />
+            <label>Postal Address</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+          <div class="input-box col-md-3">
+            <input type="text" name="suburb" onkeyup="this.setAttribute('value', this.value);" value=""
+              autocomplete="off" />
+            <label>Suburb</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+          <div class="input-box col-md-3">
+            <input type="text" name="town_city" onkeyup="this.setAttribute('value', this.value);" value=""
+              autocomplete="off" />
+            <label>Town/City</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+
+          <div class="input-box col-md-3">
+            <input type="text" name="postal_code" onkeyup="this.setAttribute('value', this.value);" value=""
+              autocomplete="off" />
+            <label>Postal Code</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+          <div class="input-box col-md-3">
+            <input type="text" name="municipality" onkeyup="this.setAttribute('value', this.value);" value=""
+              autocomplete="off" />
+            <label>Municipality</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+          <!-- <div class="input-box col-md-2">
+            <input type="text" name="gis_lat" onkeyup="this.setAttribute('value', this.value);" value=""
+              autocomplete="off" />
+            <label>GIS Latitude</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+          <div class="input-box col-md-2">
+            <input type="text" name="gis_long" onkeyup="this.setAttribute('value', this.value);" value=""
+              autocomplete="off" />
+            <label>GIS Longitude</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div> -->
+        </div>
+      </section>
+
+      <!-- <section data-info="other">
+        <div class="row">
+          <h3>Other</h3>
+
+          <div class="input-box col-md-6">
+            <input type="text" name="facsimile" onkeyup="this.setAttribute('value', this.value);" value=""
+              autocomplete="off" />
+            <label>Facsmile</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+          <div class="input-box col-md-6">
+            <input type="text" name="type_doe" onkeyup="this.setAttribute('value', this.value);" value=""
+              autocomplete="off" />
+            <label>Type Doe</label>
+            <span class="error-message"><strong>This Field is required</strong></span>
+          </div>
+
+        </div>
+      </section> -->
+
+
+      <div class="submit-box">
+        <button type="submit"> Add School</button>
+      </div>
+
+
+    </form>
+  </main>
+
+
+  <style>
+    /* Highlighting Label*/
+
+    #add-form.white-box section {
+      background-color: #f7f7f7;
+      border: 1px solid #eee;
+      padding: 1rem 10px 0;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+    }
+
+    #add-form.white-box .input-box :is(.input,
+      input:focus,
+      input:not([value=""]),
+      input[type="date"],
+      select,
+      textarea:focus,
+      textarea:not([value=""]))~label {
+      background-color: #f7f7f7;
+    }
+  </style>
+
+</body>
+
+</html>

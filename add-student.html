@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADMIN - Add Student page</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <aside>
+      <ul>
+        <li>Iusto, consectetur?</li>
+        <li>Doloremque, voluptatibus.</li>
+        <li>Exercitationem, sequi.</li>
+        <li>Iusto, aspernatur?</li>
+        <li>Cumque, illum!</li>
+        <li>Corrupti, hic.</li>
+        <li>Tempora, quas!</li>
+        <li>Facilis, fugit!</li>
+        <li>Accusantium, architecto.</li>
+        <li>Fuga, veniam?</li>
+        <li>Tempore, amet.</li>
+        <li>Obcaecati, nulla.</li>
+        <li>Reprehenderit, qui.</li>
+        <li>Obcaecati, possimus?</li>
+        <li>Similique, reiciendis.</li>
+        <li>Consequuntur, exercitationem?</li>
+        <li>Quae, fugit.</li>
+        <li>Vero, blanditiis.</li>
+        <li>Ea, itaque.</li>
+        <li>Aliquid, aperiam?</li>
+        <li>Distinctio, pariatur.</li>
+      </ul>
+    </aside>
+
+    <main>
+      <form class="white-box" id="add-form">
+        <section class="basics">
+          <!-- Academic Year, Grade, Class -->
+          <!-- School Number, Classroom Number, Admission Date -->
+          <h3>Basic Details</h3>
+
+          <div class="row">
+            <div class="input-box col-md-4">
+              <select name="" id="" required>
+                <option value="">Choose...</option>
+                <option value="">2022</option>
+              </select>
+              <label>Academic Year<span>*</span></label>
+            </div>
+
+            <div class="input-box col-md-4">
+              <select name="" id="" required>
+                <option value="">Choose...</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+              </select>
+              <label>Grade<span>*</span></label>
+            </div>
+
+            <div class="input-box col-md-4">
+              <select name="" id="" required>
+                <option value="">Choose...</option>
+                <option value="">A</option>
+                <option value="">B</option>
+                <option value="">C</option>
+                <option value="">D</option>
+              </select>
+              <label>Class<span>*</span></label>
+            </div>
+
+            <div class="input-box col-md-4">
+              <input
+                type="number"
+                name=""
+                required
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+              />
+              <label>School Number<span>*</span></label>
+            </div>
+
+            <div class="input-box col-md-4">
+              <input
+                type="number"
+                name=""
+                required
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+              />
+              <label>Classroom Number<span>*</span></label>
+            </div>
+
+            <div class="input-box col-md-4">
+              <input type="date" name="" required value="" />
+              <label>Admission Date<span>*</span></label>
+            </div>
+          </div>
+          <!-- End of Row-->
+        </section>
+
+        <section class="profile">
+          <!-- First Name, Middle Name, Last Name -->
+          <!-- Gender, DOB, Religion, Race Group -->
+          <!-- NID, Email, Phone, Photo -->
+
+          <h3>Profile Details</h3>
+
+          <div class="row">
+            <div class="input-box col-md-4">
+              <input
+                type="text"
+                name="first_name"
+                required
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+                autocomplete="off"
+              />
+              <label>First Name<span>*</span></label>
+            </div>
+
+            <div class="input-box col-md-4">
+              <input
+                type="text"
+                name="middle_name"
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+              />
+              <label>Middle Name</label>
+            </div>
+
+            <div class="input-box col-md-4">
+              <input
+                type="text"
+                name="last_name"
+                required
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+              />
+              <label>Last Name<span>*</span></label>
+            </div>
+
+            <div class="input-box col-md-4">
+              <input
+                type="email"
+                name="email"
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+              />
+              <label>Email</label>
+            </div>
+
+            <div class="input-box col-md-4">
+              <input
+                type="text"
+                name="mobile"
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+              />
+              <label data-info=" (Starts with 0)">Mobile</label>
+            </div>
+
+            <div class="input-box col-md-4">
+              <input
+                type="number"
+                name="nid"
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+              />
+              <label data-info=" (13 Digit)">National ID</label>
+            </div>
+
+            <div class="input-box col-md-3">
+              <select name="" id="" required>
+                <option value="">Choose...</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">Others</option>
+              </select>
+              <label>Gender<span>*</span></label>
+            </div>
+
+            <div class="input-box col-md-3">
+              <input type="date" name="date_of_birth" required value="" />
+              <label>Date of Birth<span>*</span></label>
+            </div>
+
+            <div class="input-box col-md-3">
+              <select name="" id="" required>
+                <option value="">Choose...</option>
+                <option value="1">Christianity</option>
+                <option value="2">Traditional African</option>
+                <option value="3">Judaism</option>
+                <option value="4">Hinduism</option>
+                <option value="5">Islam</option>
+                <option value="6">Others</option>
+              </select>
+              <label>Religion</label>
+            </div>
+
+            <div class="input-box col-md-3">
+              <select name="" id="" required>
+                <option value="">Choose...</option>
+                <option value="1">African/Black</option>
+                <option value="2">Asian/Indian</option>
+                <option value="3">White</option>
+                <option value="4">Others</option>
+              </select>
+              <label>Race Group*</label>
+            </div>
+
+            <div class="input-box col-md-6">
+              <input type="file" name="photo" />
+              <label>Profile Photo</label>
+            </div>
+          </div>
+        </section>
+
+        <section class="primary-parent">
+          <!-- First Name, Middle Name, Last Name -->
+          <!-- Email, Phone, NID -->
+          <!-- DOB, Photo, Address -->
+
+          <h3>Primary Parent</h3>
+
+          <div class="row">
+            <div class="input-box col-md-4">
+              <input
+                type="text"
+                name="first_name"
+                required
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+                autocomplete="off"
+              />
+              <label>First Name<span>*</span></label>
+            </div>
+
+            <div class="input-box col-md-4">
+              <input
+                type="text"
+                name="middle_name"
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+              />
+              <label>Middle Name</label>
+            </div>
+
+            <div class="input-box col-md-4">
+              <input
+                type="text"
+                name="last_name"
+                required
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+              />
+              <label>Last Name<span>*</span></label>
+            </div>
+
+            <div class="input-box col-md-4">
+              <input
+                type="email"
+                name="email"
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+              />
+              <label>Email</label>
+            </div>
+
+            <div class="input-box col-md-4">
+              <input
+                type="text"
+                name="mobile"
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+              />
+              <label data-info=" (Starts with 0)">Mobile</label>
+            </div>
+
+            <div class="input-box col-md-4">
+              <input
+                type="number"
+                name="nid"
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+              />
+              <label data-info=" (13 Digit)">National ID</label>
+            </div>
+
+            <div class="input-box col-md-6">
+              <input type="date" name="date_of_birth" required value="" />
+              <label>Date of Birth<span>*</span></label>
+            </div>
+
+            <div class="input-box col-md-6">
+              <input type="file" name="photo" />
+              <label>Profile Photo</label>
+            </div>
+
+            <div class="input-box col">
+              <textarea
+                name="current_address"
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+              ></textarea>
+              <label>Address</label>
+            </div>
+          </div>
+        </section>
+
+        <section class="primary-parent">
+          <!-- First Name, Middle Name, Last Name -->
+          <!-- Email, Phone, NID -->
+          <!-- DOB, Photo, Address -->
+
+          <h3>Secondary Parent</h3>
+
+          <div class="row">
+            <div class="input-box col-md-4">
+              <input
+                type="text"
+                name="first_name"
+                required
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+                autocomplete="off"
+              />
+              <label>First Name<span>*</span></label>
+            </div>
+
+            <div class="input-box col-md-4">
+              <input
+                type="text"
+                name="middle_name"
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+              />
+              <label>Middle Name</label>
+            </div>
+
+            <div class="input-box col-md-4">
+              <input
+                type="text"
+                name="last_name"
+                required
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+              />
+              <label>Last Name<span>*</span></label>
+            </div>
+
+            <div class="input-box col-md-4">
+              <input
+                type="email"
+                name="email"
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+              />
+              <label>Email</label>
+            </div>
+
+            <div class="input-box col-md-4">
+              <input
+                type="text"
+                name="mobile"
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+              />
+              <label data-info=" (Starts with 0)">Mobile</label>
+            </div>
+
+            <div class="input-box col-md-4">
+              <input
+                type="number"
+                name="nid"
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+              />
+              <label data-info=" (13 Digit)">National ID</label>
+            </div>
+
+            <div class="input-box col-md-6">
+              <input type="date" name="date_of_birth" required value="" />
+              <label>Date of Birth<span>*</span></label>
+            </div>
+
+            <div class="input-box col-md-6">
+              <input type="file" name="photo" />
+              <label>Profile Photo</label>
+            </div>
+
+            <div class="input-box col">
+              <textarea
+                name="current_address"
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+              ></textarea>
+              <label>Address</label>
+            </div>
+          </div>
+        </section>
+
+        <section class="documents">
+          <h3>Documents</h3>
+          <!-- Document -->
+
+          <div class="row">
+            <div class="input-box col-md-3">
+              <input
+                type="text"
+                name=""
+                required
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+                autocomplete="off"
+              />
+              <label>Document 1 Title</label>
+            </div>
+
+            <div class="input-box col-md-3">
+              <input
+                type="text"
+                name=""
+                required
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+                autocomplete="off"
+              />
+              <label>Document 2 Title</label>
+            </div>
+            <div class="input-box col-md-3">
+              <input
+                type="text"
+                name=""
+                required
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+                autocomplete="off"
+              />
+              <label>Document 3 Title</label>
+            </div>
+            <div class="input-box col-md-3">
+              <input
+                type="text"
+                name=""
+                required
+                onkeyup="this.setAttribute('value', this.value);"
+                value=""
+                autocomplete="off"
+              />
+              <label>Document 4 Title</label>
+            </div>
+
+            <div class="input-box col-md-3">
+              <input type="file" name="" />
+              <label>Document 1</label>
+            </div>
+
+            <div class="input-box col-md-3">
+              <input type="file" name="" />
+              <label>Document 2</label>
+            </div>
+
+            <div class="input-box col-md-3">
+              <input type="file" name="" />
+              <label>Document 3</label>
+            </div>
+
+            <div class="input-box col-md-3">
+              <input type="file" name="" />
+              <label>Document 4</label>
+            </div>
+          </div>
+        </section>
+
+        <section class="test">
+          <h3>Test</h3>
+          <div class="input-box col-md-3">
+            <input type="file" name="" id="efg" style="display: none" />
+            <div class="input">
+              <button id="abcd">Choose File</button>
+              <span>File Name</span>
+            </div>
+            <label>Upload File</label>
+          </div>
+        </section>
+
+        <div class="submit-box">
+          <button type="submit">Add Staff</button>
+        </div>
+      </form>
+    </main>
+
+    <script>
+      document.querySelector(".input").addEventListener("click", (e) => {
+        e.preventDefault();
+        e.target.parentElement.previousElementSibling.click();
+      });
+
+      document.querySelector("#efg").addEventListener("change", (e) => {
+        console.log(e.target.files[0].name);
+        document.querySelector("#abcd + span").innerHTML =
+          e.target.files[0].name;
+      });
+    </script>
+  </body>
+</html>

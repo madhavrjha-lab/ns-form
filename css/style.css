@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css");
+
+body {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  gap: 0;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+aside {
+  height: 100vh;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+@media (max-width: 1370px) {
+  body {
+    grid-template-columns: 20% 80%;
+  }
+}
+
+@media (max-width: 991px) {
+  aside {
+    display: none;
+  }
+  body {
+    grid-template-columns: 1fr;
+  }
+}
+
+main {
+  background-color: #edf5ff;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+
+/* #add-form.white-box */
+
+#add-form.white-box {
+  --primary-dark-color: #113686;
+  --primary-light-color: #edf5ff;
+  padding: 1rem;
+  margin-top: 3rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+#add-form.white-box * {
+  font-family: "Roboto", sans-serif;
+}
+
+#add-form.white-box h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--primary-dark-color);
+  margin-bottom: 1.2rem;
+}
+
+#add-form.white-box .input-box {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+#add-form.white-box .input-box :is(input, .input, select, textarea) {
+  width: 100%;
+  padding: 0.5rem 10px;
+  font-size: 0.8rem;
+  letter-spacing: 0.062rem;
+  border: 1px solid #888;
+  background: transparent;
+  border-radius: 4px;
+  transition: all 0.1s;
+}
+
+#add-form.white-box .input-box textarea {
+  height: 80px;
+}
+
+#add-form.white-box .input-box input[type="file"],
+.input {
+  cursor: pointer;
+}
+
+#add-form.white-box .input-box input[type="file"]::file-selector-button,
+#abcd {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid #888;
+  outline: none;
+  cursor: pointer;
+  transform: scale(0.9);
+  transition: all 0.3s;
+  font-size: 0.8rem;
+}
+
+#add-form.white-box .input-box input[type="file"]:hover::file-selector-button,
+.input:hover #abcd {
+  background-color: var(--primary-dark-color);
+  color: var(--primary-light-color);
+}
+
+#add-form.white-box .submit-box {
+  text-align: center;
+}
+
+#add-form.white-box button[type="submit"] {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: var(--primary-dark-color);
+  padding: 0.6rem 1.25rem;
+  cursor: pointer;
+  border-radius: 0.312rem;
+  font-size: 0.9rem;
+}
+
+#add-form.white-box button[type="submit"]:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+#add-form.white-box .input-box label {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+  color: #888;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+#add-form.white-box .input-box label::after {
+  content: attr(data-info);
+}
+
+#add-form.white-box
+  .input-box
+  :is(
+    .input,
+    input:focus,
+    input:not([value=""]),
+    input[type="date"],
+    select,
+    textarea:focus,
+    textarea:not([value=""])
+  )
+  ~ label {
+  top: -10px;
+  left: 20px;
+  color: var(--primary-dark-color);
+  font-size: 0.75rem;
+  background-color: #fff;
+  padding: 0 5px;
+}
+
+#add-form.white-box
+  .input-box
+  :is(
+    input:focus,
+    input:not([value=""]),
+    input[type="date"],
+    select,
+    textarea:focus,
+    textarea:not([value=""])
+  )
+  ~ label::after {
+  content: "";
+}
+
+#add-form.white-box .input-box :is(input:focus, select:focus, textarea:focus) {
+  outline: none;
+  border: 2px solid var(--primary-dark-color);
+}
+
+#add-form.white-box .error-message {
+  display: none;
+}
+
+#add-form.white-box .error-message strong {
+  color: #af0606;
+  font-size: 0.8rem;
+  padding: 0 10px;
+  font-weight: 400;
+}
+
+@media (max-width: 576px) {
+  #add-form.white-box .input-box {
+    margin-bottom: 15px;
+  }
+}
